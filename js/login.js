@@ -18,6 +18,6 @@ document.getElementById('btn-submit').addEventListener('click', function(){
           location.href = 'bank.html'
     }
     else{
-alert('tui password vol!!! likcos. deke pass lik')
+alert('tui password vol likcos Hablu!!! deke pass lik')
     }
 })
