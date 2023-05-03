@@ -5,6 +5,11 @@ document.getElementById('btn-deposit').addEventListener('click', function(event)
 const depositField = document.getElementById('deposit-feild');
 const newDepositAmountString = depositField.value;
 const newDepositAmount = parseFloat(newDepositAmountString)
+depositField.value = ''
+if(isNaN(newDepositAmount)){
+    alert('plz provide a valid number')
+    return;
+}
 
 // step-3 get the current deposit total;
 const depositTotalElement = document.getElementById('deposit-total');
